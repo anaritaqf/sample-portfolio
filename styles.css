@@ -1,12 +1,19 @@
 html, body {
   height:100%;
   margin:0;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 body {
-    background-color:rgb(225, 225, 225);
     font-family:Helvetica, Arial, sans-serif;
+}
+
+.background-gradient {
+    background: radial-gradient(125% 125% at 50% 5%, #fff 40%, #6366f1 100%);
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    overflow: scroll;
 }
 
 .wrapper {
@@ -20,7 +27,7 @@ body {
     position:sticky;
     top:0;
     z-index:9999;
-    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+    box-shadow:0 2px 20px rgba(0,0,0,.1);
 }
 
 .container {
@@ -60,8 +67,8 @@ main {
 
 .secao-hover {
     margin-top:50px;
-    position: relative;
-    display: inline-block;
+    position:relative;
+    display:inline-block;
 }
 
 .hover-img {
@@ -84,57 +91,38 @@ main {
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    gap:25px;
 }
 
-/*.
-work {
-    display:flex;
-    flex-direction:column;
-}
-
-.featured-work {
-    display:flex;
-    justify-content:center;
-    margin-top:30px;
-}
-
-.featured-work a:hover {
-    text-decoration:underline;
-    text-transform:uppercase;
-    color:#8eeca9;
-}
-
-.work-list {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    gap:50px;
+h1 {
+    font-size:60px;
     text-align:center;
+    margin-bottom:0px;
 }
 
-.article {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+.par1 {
+    font-size:20px;
+    text-align:center;
+    margin:0px;
 }
 
-.par {
-    display:flex;
-    justify-content:center;
-    max-width:350px;
-    color:#5e5e5e;
+.btn1 {
+  background-color:rgb(106, 78, 162);
+  color:white;
+  font-size:16px;
+  padding:10px 15px;
+  margin:0px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s ease; /* suaviza o hover */
 }
 
-.macbook {
-    margin-left:25px;
+.btn1:hover {
+  background-color:#8eeca9;
+  transform: scale(1.05); /* cresce um pouco */
+  text-decoration:underline;
 }
-
-.iphone13 {
-    margin-left:45px;
-}
-*/
 
 
 /* About Page */
@@ -195,7 +183,7 @@ work {
     align-items:center;
 }
 
-.par {
+.par3 {
     display:flex;
     justify-content:center;
     max-width:350px;
@@ -209,21 +197,6 @@ work {
 .iphone13 {
     margin-left:45px;
 }
-
-/*
-.article2 {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.article2 a:hover {
-    text-decoration:underline;
-    text-transform:uppercase;
-    color:#8eeca9;
-}
-*/
 
 
 /* Contact Page */
@@ -256,14 +229,30 @@ work {
 .email-contact a:hover {
     text-decoration:underline;
     text-transform:uppercase;
-    color:#8eeca9;
+}
+
+.btn2 {
+  background-color:rgb(106, 78, 162);
+  color:white;
+  font-size:16px;
+  padding:10px 15px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s ease; /* suaviza o hover */
+}
+
+.btn2:hover {
+  background-color:#8eeca9;
+  transform: scale(1.05); /* cresce um pouco */
+  text-decoration:underline;
 }
 
 
 /* Footer */
 
 .site-footer {
-    margin-top:150px;
+    margin-top:100px;
     padding:20px;
     text-align:center;
 }
@@ -271,53 +260,19 @@ work {
 .site-footer a:hover {
     text-decoration:underline;
     text-transform:uppercase;
-    color:#8eeca9;
+    color: white;
 }
 
 .socials {
     display:flex;
-    padding:20px;
+    padding-bottom:20px;
     gap:20px;
     align-items:center;
     justify-content:center;
 }
 
 
-/* Buttons & Links */
-
-.btn {
-  background-color:rgb(106, 78, 162);
-  color:white;
-  font-size:16px;
-  padding:10px 15px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-  transition:0.3s ease; /* suaviza o hover */
-}
-
-.btn:hover {
-  background-color:#8eeca9;
-  transform: scale(1.05); /* cresce um pouco */
-  text-decoration:underline;
-}
-
-.btn1 {
-  background-color:rgb(106, 78, 162);
-  color:white;
-  font-size:16px;
-  padding:10px 15px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-  transition:0.3s ease; /* suaviza o hover */
-}
-
-.btn1:hover {
-  background-color:#8eeca9;
-  transform: scale(1.05); /* cresce um pouco */
-  text-decoration:underline;
-}
+/* General Links */
 
 a {
   color:inherit;
